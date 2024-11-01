@@ -10,7 +10,7 @@ Map<String, String> myheaders = {'authorization': _basicAuth};
 class CreateInsertUpdate {
   getRequest(String url) async {
     try {
-      var response = await http.get(Uri.parse(url));
+      var response = await http.get(Uri.parse(url),headers: myheaders);
       if (response.statusCode == 200) {
         var responseBody = jsonDecode(response.body);
         return responseBody;

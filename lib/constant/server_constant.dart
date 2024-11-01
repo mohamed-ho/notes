@@ -6,3 +6,4 @@ String getNotes = '$serverUrl/notes/select.php';
 String addNotes = '$serverUrl/notes/insert.php';
 String deleteNote = '$serverUrl/notes/delete.php';
 String updateNote = '$serverUrl/notes/update.php';
+
